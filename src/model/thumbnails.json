@@ -8,9 +8,13 @@
         "src": "http://lorempixel.com/242/200/animals",
         "alt": "This is a random Animal-themed image"
       },
-      "badge": {
-        "title": "Inbox",
-        "number": 3
+      "dropdown": {
+        "title": "Cities in Australia",
+        "items": [
+          "Sydney, NSW",
+          "Melbourne, VIC",
+          "Brisbane, QLD"
+        ]
       }
     },
     {
@@ -21,9 +25,13 @@
         "src": "http://lorempixel.com/242/200/sports",
         "alt": "This is a random Sports-themed image"
       },
-      "badge": {
-        "title": "Sent",
-        "number": 5
+      "dropdown": {
+        "title": "Cities in Canada",
+        "items": [
+          "Toronto, ON",
+          "Montreal, QC",
+          "Vancouver, BC"
+        ]
       }
     },
     {
@@ -34,9 +42,13 @@
         "src": "http://lorempixel.com/242/200/city",
         "alt": "This is a random Nature-themed image"
       },
-      "badge": {
-        "title": "Spam",
-        "number": 7
+      "dropdown": {
+        "title": "Cities in the US",
+        "items": [
+          "Boston, MA",
+          "San Francisco, CA",
+          "New York, NY"
+        ]
       }
     }
   ]

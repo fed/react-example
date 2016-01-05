@@ -1,5 +1,5 @@
 var React = require('react');
-var Badge = require('./Badge');
+var Dropdown = require('./Dropdown');
 
 module.exports = React.createClass({
   render: function () {
@@ -8,7 +8,7 @@ module.exports = React.createClass({
       <div className="caption">
         <h3>{this.props.title}</h3>
         <p>{this.props.content}</p>
-        <p><Badge title={this.props.badge.title} number={this.props.badge.number} /></p>
+        <Dropdown {...this.props.dropdown} />
       </div>
     </div>
   }
