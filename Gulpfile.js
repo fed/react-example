@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const browserify = require('browserify');
 const babelify = require('babelify');
 const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
@@ -30,8 +32,10 @@ gulp.task('bundle', () => {
       console.error(err);
       this.emit('end');
     })
-    .pipe(source('app.min.js'))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(source('bundle.min.js'))
+    .pipe(buffer())
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('sass', () => {
@@ -39,7 +43,7 @@ gulp.task('sass', () => {
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('webserver', () => {
