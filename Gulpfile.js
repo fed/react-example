@@ -32,7 +32,7 @@ gulp.task('bundle', () => {
       console.error(err);
       this.emit('end');
     })
-    .pipe(source('bundle.min.js'))
+    .pipe(source('app.min.js'))
     .pipe(buffer())
     .pipe(uglify())
     .pipe(gulp.dest('dist'));
