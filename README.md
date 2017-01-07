@@ -2,6 +2,8 @@
 
 Based on the [Build Web Apps with React JS and Flux](https://www.udemy.com/learn-and-understand-reactjs) course by Stephen Grider.
 
+![Screenshot](http://i.imgur.com/v9RCl1i.png)
+
 ## Prerequisites
 
 * Node.js (https://nodejs.org/)
