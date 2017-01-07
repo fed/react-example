@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/fknussel/react-example.git"
+    "url": "https://github.com/fknussel/react-example.git"
   },
   "scripts": {
-    "start": "./node_modules/gulp/bin/gulp.js",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
